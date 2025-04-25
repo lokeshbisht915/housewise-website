@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @media only-screen and (max-width: 768px){
+    :root{
+        --space: 100px;
+    }
+}
+
+
+@media only screen and (max-width:800px) {
+    .menu #navb li {
+        display: none;
+    }
+
+    .menu #navb #hm{
+        display:block;
+    }
+
+    .menu #navb #sub_pro1{
+        display:block;
+    }
+
+}
+
+#sub_pro1{
+    display:none;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+:root{
+    --top: linear-gradient(to right,rgb(14, 206, 227), rgb(23, 207, 152));
+    --space : 10px;    
+}
+
+nav .menu li{
+    list-style-type: none !important;
+    text-wrap: nowrap !important;
+}
+
+.menu ul {
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.head{
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: var(--top);
+    height: 50px;
+    width:100%;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.head .space{
+    width: var(--space);
+    /* height: 50px; */
+}
+
+.head .contanct ul{
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+}
+
+.head .contanct ul li{
+    display:flex;
+    flex-wrap: nowrap;
+}
+
+
+.contanct ul li,a{
+    text-decoration:none;
+    list-style-type: none;
+    color:black;
+}
+
+.contanct ul li *{
+    display:flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-size: 18px; 
+}
+.logo{
+    width:120px;
+    height: 80px;
+    display:flex;
+    align-items: center;
+}
+.logo img{
+    width:100%;
+    height: 50%;
+    
+}
+
+.navig{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+}
+
+
+#btt{
+    width:130px;
+    height:40px;
+    background-color: rgb(90, 104, 231);
+    color:white;
+    border-radius: 10px;
+    border:none ;
+}
+
+.menu ul {
+    display:flex;
+    align-items: center;
+}
+
+/* ___________________-main ke css_______________________- */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+
+}
+
+:root{
+ --light:rgb(162, 202, 239);
+ --avg:rgb(100, 221, 211);
+ --mid:rgb(53, 177, 177);
+ --full:rgb(17, 136, 149);
+ --bdr:rgb(14, 22, 79);
+ --top: linear-gradient(to right,rgb(14, 206, 227), rgb(23, 207, 152));
+
+
+}
+
+main{
+    width:auto;
+    height: auto;
+}
+.main1{
+    width:100%;
+    height:auto;
+    /* display:grid; */
+    display:flex;
+    /* grid-template-columns: 600px 500px ; */
+    justify-content: center;
+    /* grid-auto-flow: row; */
+    flex-wrap: wrap;
+
+}
+
+.main1 .quote{
+    width: 550px;
+    height:380px;
+    /* background-color: aqua; */
+    display:grid;
+    grid-template-columns: 500px;
+    grid-template-rows: 120px 100px 120px;
+    justify-content: center;
+    padding:20px;
+    /* background-color: var(--light,  light-green ); */
+}
+
+.main11{
+    width:100%;
+    height:100px;
+    /* background-color:var(--mid);
+    border: 2PX solid var(--bdr); */
+    display:flex;
+    flex-wrap: wrap;
+    
+
+}
+
+.main11 span{
+    width:100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+
+    font-size:30px;
+}
+
+.main1 .quote .main11 :nth-child(1) {
+    color:aqua ;
+}
+
+.main1 .quote .main11 :nth-child(3) {
+    color:aqua ;
+}
+
+/* .main span :nth-child(3) {
+    color:aqua ;
+} */
+
+.main11 span:last-child{
+    font-weight: 900;
+    display:block;
+    width: 450px;
+}
+
+.main12 span{
+    color:aqua;
+}
+.butn{
+    width:100%;
+    height:50px;
+    
+}
+
+.butn button{
+    width:140px;
+    height:40px;
+    background-color: rgb(90, 104, 231);
+    color:white;
+    border:none;
+}
+
+.main13 .butn a {
+    text-decoration: underline;
+    color:aqua;
+}
+
+.detail{
+    width:500px;
+    height: 380px;
+}
+
+.detail img {
+    width:100%;
+    object-fit: cover !important;
+    object-position: center center;
+}
+
+
+.main2{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction: row;
+    background-color:#e5f5fa;
+    ;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding:20px;
+}
+
+
+
+.main2 .main20{
+  width:100px;
+    height:120px;  
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align:center;
+    gap:10px;
+}
+
+.main2 .main20 .city{
+    width:70px;
+    height:70px;
+    display: flex;
+    background-color:aquamarine;
+    border-radius: 50px;
+}
+
+.city img{
+    width:70px;
+    height:70px;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 50px;
+
+}
+
+
+
+/* main 3 div css starting here */
+
+.box{
+    width: 100%;
+    height: 40%;
+    display:flex;
+    justify-content: center;
+    background-image: url("workbackimg2.webp");
+    background-repeat: no-repeat;
+}
+.main3{
+    width:1010px;
+    height:500px;
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding:60px 0px;
+}
+
+.main3 span{
+    height:100px;
+    padding:50px 0px ;
+}
+
+.boxM{
+    width:90%;
+    height:90%;
+    /* background-color: rgb(234, 234, 233); */
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:20px;
+}
+
+.boxm1{
+    width:30%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.boxm1 img{
+    width:30px;
+    height:30px;
+    object-fit: cover;
+    padding:0px 20px 20px 
+}
+
+.boxm1 p{
+    padding:10px 10px 10px 10px;
+}
+
+#lrnmr{
+    border:none;
+    background-color: rgb(89, 89, 215) ;
+    width:140px;
+    height:40px;
+    margin-top: 20px;
+    color:white;
+    font-size: 14px;
+}
+
+.bchngm{
+    height:50px;
+    background-image: url("birds.webp");
+    background-repeat: no-repeat;
+    display:flex;
+    flex-direction: row-reverse;
+    background-position-x: right center;
+
+    
+}
+
+.chooseus,.dsc{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    height:auto;
+    
+}
+.dsc{
+    width:1024px;
+    height: 70%;
+    flex-wrap: wrap;
+    gap:10px;
+    padding:70px 0px 70px 0px;
+}
+
+
+.dsc .main11 #end{
+    height: 50px;
+    display: inline-block;
+}
+
+.dsc .quote .main11{
+    height: 60px;
+    width:100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:large;
+    /* font-weight: 15px; */
+}
+
+.dsc .quote .main12{
+    padding: 20px 0px 20px 0px;
+}
+
+.dsc .quote {
+    WIDTH:45%;
+    height: 100%;
+    padding: 10PX;
+}
+
+.dsc .details {
+    width:50%;
+    /* position:stati; */
+}
+
+
+
+.dsc .quote .main13 {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.main5{
+    width:100%;
+    height:25%;
+    background-image: var(--top);
+    padding:50px 0px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    flex-wrap: wrap;
+}
+
+.pilL{
+    width:200px;
+    height:200px;
+    display:flex;
+    flex-direction: column;
+    padding:0px 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pil_img{
+    width:150px ;
+    height: 100px;
+    border-radius: 50px;
+    display:flex;
+    justify-content: center;
+    background-image:var(--top);
+    align-items: center;
+}
+
+.pil_img img{
+    
+    width:60px;
+    height:40px;
+    object-fit:contain;
+    object-position: center center;
+    border-radius: 30px;
+
+}
+
+.pil_head{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    padding:20px 0px 0px 0px;
+    font-weight: 600;
+}
+
+.pil_text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* main6 styling starts here */
+
+.main6{
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:5% 30px;
+    
+    background-image: url("birds.webp");
+    background-repeat: no-repeat;
+    background-position-x: right right;
+    flex-wrap: wrap;
+}
+
+.hiw_hd{
+    display: flex;
+    justify-content: center;
+    padding:60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hiw{
+    width:auto;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    
+}
+
+.hiw .chip{
+    width:30%;
+    min-width: 340px;
+    height:auto;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hiw .odd-chip * , .hiw .odd-chip {
+    background-color: rgb(188, 255, 255) ;
+}
+
+.chip .chip_disc{
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.chip_disc p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:15px;
+    
+}
+.chip_head p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.chip_img{
+    display:flex;
+    align-items: center;
+    padding: 0px 0px 0px 20px;
+}
+
+.chip_img img{
+    width:70%;
+    height:100%;
+    object-fit: contain;
+    object-position: center center;
+}
+
+
+/* main7 styling starts here  */
+
+.main7{
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* padding:2% 0% 5% 0%; */
+    gap:60px;
+    
+    background-image: url("birds.webp");
+    background-repeat: no-repeat;
+    background-position-x: right right;
+    flex-wrap: wrap;
+    
+}
+
+.main7 .benifit {
+    width:1020px;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.bnft_hd{
+    display: flex;
+    justify-content: center;
+    padding:60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main7 .benifit .bnft{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    
+}
+
+.bnft .card{
+    width:240px;
+    min-width: 340px;
+    height:auto;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.card .card_disc{
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.card_disc p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:15px;
+    
+}
+.card_head p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.card_img{
+    display:flex;
+    align-items: center;
+    padding: 0px 0px 0px 20px;
+}
+
+.card_img img{
+    width:70%;
+    height:100%;
+    object-fit: contain;
+    object-position: center center;
+}
+
+.main9{
+    width:100%;
+    height:626px;
+    background-image: var(--top);
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="head">
+            <div class="space"></div>
+            <div class="contanct">
+                <ul>
+                    <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></i><p>sales@housewise.in</p></a></li>
+                    <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i><p>+91-8458450011</p></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navig">
+        
+        <div class="menu">
+            <ul id = "navb">
+                <li id = "hm"><a>
+                        <div class="logo"><img src = "logo.png" alt = "logo"></div>
+                        
+                    </a></li>
+
+                    <li ><a href="#"><p>Home</p></a></li>
+                    <li><a href="#"><p>Services</p></a>
+                </li>
+                <li><a href="#"><p>Location</p></a>
+                </li>
+                
+                <li><a href="#"><p>Contanct Us </p></a></li>
+                <li><a href="#"><p>About Us </p></a></li>
+                <li><a href="#"><p>Sign Up</p></a></li>
+                <li><a href="#"><p>Login</p></a></li>
+                <li id = "sub_pro"><a href="#" ><button id = "btt">Submit property</button></a></li>
+                <li id = "sub_pro1"><a href="#"><button id = "btt"><i class = "fa fa-menu"></i></button></a></li>
+                
+            </ul>
+        </div>
+        </div>
+
+    </nav>
+
+
+
+
+
+    <aside>
+
+    </aside>
+
+
+    <main>  
+        <div class="main1">
+            
+            <div class="quote">
+                <div class="main11"><span class = ".word-flip1">Lorem</span>
+                <span>about</span>
+                <span class = ".word-flip1">ispiem</span>
+
+                <span id = "end">Properties in India.</span>
+
+                </div>
+                <div class="main12">
+                    <P>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nobis placeat commodi, quis animi alias laborum?
+                        <span> Saepe est consequatur
+                        </span>
+                        magni voluptate quae reprehenderit cupiditate obcaecati.
+                    </P>
+                </div>
+                <div class="main13">
+                    <div class="butn">
+                        <button>Explore Services</button>
+                    </div>
+                    <a href = "#">lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusantium iure laborum.</a>
+                </div>
+            </div>
+            <div class="detail">
+                <img src = "banner.webp">
+            </div>
+            
+        </div>
+
+
+
+        <div class="main2">
+            <div class="main20"><div class="city"><img src = "pune1.webp"></div><p>pune</p></div>
+            <div class="main20"><div class="city"><img src = "noida.webp"></div><p>noida</p></div>
+            <div class="main20"><div class="city"><img src = "mumbai.webp"></div><p>mumbai</p></div>
+            <div class="main20"><div class="city"><img src = "Kolkata.webp"></div><p>Kolkata</p></div>
+            <div class="main20"><div class="city"><img src = "kochi.webp"></div><p>kochi</p></div>
+            <div class="main20"><div class="city"><img src = "hyderabad.webp"></div><p>hyderabad</p></div>
+            <div class="main20"><div class="city"><img src = "gurugram.webp"></div><p>gurugram</p></div>
+            <div class="main20"><div class="city"><img src = "goa.webp"></div><p>goa</p></div>
+            <div class="main20"><div class="city"><img src = "delhi.webp"></div><p>delhi</p></div>
+            <div class="main20"><div class="city"><img src = "chennai.webp"></div><p>chennai</p></div>
+            <div class="main20"><div class="city"><img src = "bangalore.webp"></div><p>bangalore</p></div>
+            <div class="main20"><div class="city"><img src = "Ahmedabad.webp"></div><p>Ahmedabad</p></div>
+        </div>
+
+        <div class="box">
+        <div class="main3">
+
+                <span><h1>Our Services Includes:</h1></span>
+                <div class="boxM">
+                    <div class="boxm1">
+                        <div class="pct"><img src = "endtoend.webp"></div>
+                        <h3>Lorem, ipsum.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, assumenda fuga. Quis accusamus deserunt animi at, ullam doloremque nulla dolore cumque nemo sunt.</p>
+                        <button id = "lrnmr">Learn More</button>
+                    </div>
+                    <div class="boxm1">
+                        <div class="pct"><img src = "rental.webp"></div>
+                        <h3>Lorem, ipsum.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, assumenda fuga. Quis accusamus deserunt animi at, ullam doloremque nulla dolore cumque nemo sunt.</p>
+                        <button id = "lrnmr">Learn More</button>
+
+                    </div>
+                    <div class="boxm1">
+                        <div class="pct"><img src = "property.webp"></div>
+                        <h3>Lorem, ipsum.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, assumenda fuga. Quis accusamus deserunt animi at, ullam doloremque nulla dolore cumque nemo sunt.</p>
+                        <button id = "lrnmr">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bchngm"><img src = "birds.webp"></div>
+        
+        <div class = "chooseus">
+            <!-- <div class="pitc"></div>-->
+             <div class="dsc">
+
+                 
+                 <div class="quote">
+                     <div class="main11">
+                        
+                        <span id = "end">Why Should you Choose Us</span>
+                        
+                    </div>
+                    <div class="main12">
+                        <P>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nobis placeat commodi, quis animi alias laborum?
+                            <span> Saepe est consequatur
+                            </span>
+                            magni voluptate quae reprehenderit cupiditate obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eos laboriosam sed assumenda labore, libero neque veritatis voluptatum, officiis unde harum saepe asperiores! Eos veritatis sed odit eaque, ad laudantium tenetur dolorem molestiae delectus ex rem animi ullam temporibus natus architecto corrupti incidunt alias nam?
+                        </P>
+                    </div>
+                    
+                    <div class="butn">
+                        <button>Learn More</button>
+                    </div>
+                </div>
+                <div class="detail">
+                    <img src = "about.webp">
+                </div>
+            </div>
+                
+            </div>
+
+
+            <!-- //layout name main5 starting here -->
+
+            <div class="main5">
+                    <div class="pilL">
+                        <div class="pil_img"><img src = "prop.webp"></div>
+                        <div class="pil_head"><p>23456</p></div>
+                        <div class="pil_text"><p>Properties</p></div>
+                    </div>
+                    <div class="pilL"><div class="pil_img"><img src = "squarefeet.webp"></div>
+                    <div class="pil_head"><p>56342234</p></div>
+                    <div class="pil_text"><p>Square Feet</p></div>
+                    </div>
+                    <div class="pilL"><div class="pil_img"><img src = "clients.webp"></div>
+                    <div class="pil_head"><p>5656</p></div>
+                    <div class="pil_text"><p>Happy Client</p></div>
+                    </div>
+                    <div class="pilL"><div class="pil_img"><img src = "location.webp"></div>
+                    <div class="pil_head"><p>56</p></div>
+                    <div class="pil_text"><p>city</p></div>
+                    </div>
+                    <div class="pilL"><div class="pil_img"><img src = "internet.webp"></div>
+                    <div class="pil_head"><p>26</p></div>
+                    <div class="pil_text"><p>countries</p></div>
+                    </div>
+
+            </div>
+<!-- main6 layout start here -->
+            <div class="main6">
+                <div class="hiw_hd"><h1>How it Works?</h1></div>
+                <div class="hiw">
+                    <div class="chip odd-chip">
+                        <div class="chip_img"><img src = "step1.webp"></div>
+                        <div class="chip_head"><p>Step 1</p></div>
+                        <div class="chip_disc"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, quaerat. Fugiat illum corrupti iste deserunt sunt quae fuga illo eius molestias eligendi incidunt molestiae ex tenetur nulla est, in similique explicabo excepturi voluptas. Aliquid!</p></div>
+                    </div>
+                    <div class="chip">
+                        
+                        <div class="chip_img"><img src = "step2.webp"></div>
+                        <div class="chip_head"><p>step 2</p></div>
+                        <div class="chip_disc"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, quaerat. Fugiat illum corrupti iste deserunt sunt quae fuga illo eius molestias eligendi incidunt molestiae ex tenetur nulla est, in similique explicabo excepturi voluptas. Aliquid!</p></div>
+                    </div>
+                    <div class="chip odd-chip">
+                        <div class="chip_img"><img src = "step3.webp"></div>
+                        <div class="chip_head"><p>Step 3</p></div>
+                        <div class="chip_disc"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, quaerat. Fugiat illum corrupti iste deserunt sunt quae fuga illo eius molestias eligendi incidunt molestiae ex tenetur nulla est, in similique explicabo excepturi voluptas. Aliquid!</p></div></div>
+                    <div class="chip">
+                        <div class="chip_img"><img src = "step4.webp"></div>
+                        <div class="chip_head"><p>Step 4</p></div>
+                        <div class="chip_disc"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, quaerat. Fugiat illum corrupti iste deserunt sunt quae fuga illo eius molestias eligendi incidunt molestiae ex tenetur nulla est, in similique explicabo excepturi voluptas. Aliquid!</p></div></div>
+                    <div class="chip odd-chip">
+                        <div class="chip_img"><img src = "step5.webp"></div>
+                        <div class="chip_head"><p>Step 5</p></div>
+                        <div class="chip_disc"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, quaerat. Fugiat illum corrupti iste deserunt sunt quae fuga illo eius molestias eligendi incidunt molestiae ex tenetur nulla est, in similique explicabo excepturi voluptas. Aliquid!</p></div></div>
+                    <div class="chip">
+                        <div class="chip_img"><img src = "step6.webp"></div>
+                        <div class="chip_head"><p>Stem 6</p></div>
+                        <div class="chip_disc"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, quaerat. Fugiat illum corrupti iste deserunt sunt quae fuga illo eius molestias eligendi incidunt molestiae ex tenetur nulla est, in similique explicabo excepturi voluptas. Aliquid!</p></div></div>
+                </div>
+            </div>
+            
+             <!-- main7 layout start here  -->
+
+            <div class="main7">
+                <div class="benifit">
+                <div class="bnft_hd"><h1>Benifts</h1></div>
+                <div class="bnft">
+                    <div class="card ">
+                        <div class="card_img"><img src = "benefit1.webp"></div>
+                        <div class="card_head"><p>TrustWorthiness</p></div>
+                        <div class="card_disc"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, quaerat. Fugiat illum corrupti iste deserunt sunt quae fuga illo eius molestias eligendi incidunt molestiae ex tenetur nulla est, in similique explicabo excepturi voluptas. Aliquid!</p></div>
+                    </div>
+                    <div class="card">
+                        
+                       <div class="card_img"><img src = "benefit2.webp"></div>
+                        <div class="card_head"><p>Seamless Communication</p></div>
+                        <div class="card_disc"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, quaerat. Fugiat illum corrupti iste deserunt sunt quae fuga illo eius molestias eligendi incidunt molestiae ex tenetur nulla est, in similique explicabo excepturi voluptas. Aliquid!</p></div>
+                    </div>
+                    <div class="card">
+                     <div class="card_img"><img src = "benefit3.webp"></div>
+                        <div class="card_head"><p>Peace Of Mind</p></div>
+                        <div class="card_disc"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, quaerat. Fugiat illum corrupti iste deserunt sunt quae fuga illo eius molestias eligendi incidunt molestiae ex tenetur nulla est, in similique explicabo excepturi voluptas. Aliquid!</p></div>
+                    
+                </div>
+            </div>
+            </div> 
+
+            <div class="main9">
+
+            </div>
+
+        </main>
+        
+        
+        
+        <footer>
+            
+    </footer>
+</body>
+</html>

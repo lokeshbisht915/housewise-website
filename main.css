@@ -1,0 +1,514 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+
+}
+
+:root{
+ --light:rgb(162, 202, 239);
+ --avg:rgb(100, 221, 211);
+ --mid:rgb(53, 177, 177);
+ --full:rgb(17, 136, 149);
+ --bdr:rgb(14, 22, 79);
+ --top: linear-gradient(to right,rgb(14, 206, 227), rgb(23, 207, 152));
+
+
+}
+
+main{
+    width:auto;
+    height: auto;
+}
+.main1{
+    width:100%;
+    height:auto;
+    /* display:grid; */
+    display:flex;
+    /* grid-template-columns: 600px 500px ; */
+    justify-content: center;
+    /* grid-auto-flow: row; */
+    flex-wrap: wrap;
+
+}
+
+.main1 .quote{
+    width: 550px;
+    height:380px;
+    /* background-color: aqua; */
+    display:grid;
+    grid-template-columns: 500px;
+    grid-template-rows: 120px 100px 120px;
+    justify-content: center;
+    padding:20px;
+    /* background-color: var(--light,  light-green ); */
+}
+
+.main11{
+    width:100%;
+    height:100px;
+    /* background-color:var(--mid);
+    border: 2PX solid var(--bdr); */
+    display:flex;
+    flex-wrap: wrap;
+    
+
+}
+
+.main11 span{
+    width:100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+
+    font-size:30px;
+}
+
+.main1 .quote .main11 :nth-child(1) {
+    color:aqua ;
+}
+
+.main1 .quote .main11 :nth-child(3) {
+    color:aqua ;
+}
+
+/* .main span :nth-child(3) {
+    color:aqua ;
+} */
+
+.main11 span:last-child{
+    font-weight: 900;
+    display:block;
+    width: 450px;
+}
+
+.main12 span{
+    color:aqua;
+}
+.butn{
+    width:100%;
+    height:50px;
+    
+}
+
+.butn button{
+    width:140px;
+    height:40px;
+    background-color: rgb(90, 104, 231);
+    color:white;
+    border:none;
+}
+
+.main13 .butn a {
+    text-decoration: underline;
+    color:aqua;
+}
+
+.detail{
+    width:500px;
+    height: 380px;
+}
+
+.detail img {
+    width:100%;
+    object-fit: cover !important;
+    object-position: center center;
+}
+
+
+.main2{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction: row;
+    background-color:#e5f5fa;
+    ;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding:20px;
+}
+
+
+
+.main2 .main20{
+  width:100px;
+    height:120px;  
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align:center;
+    gap:10px;
+}
+
+.main2 .main20 .city{
+    width:70px;
+    height:70px;
+    display: flex;
+    background-color:aquamarine;
+    border-radius: 50px;
+}
+
+.city img{
+    width:70px;
+    height:70px;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 50px;
+
+}
+
+
+
+/* main 3 div css starting here */
+
+.box{
+    width: 100%;
+    height: 40%;
+    display:flex;
+    justify-content: center;
+    background-image: url("workbackimg2.webp");
+    background-repeat: no-repeat;
+}
+.main3{
+    width:1010px;
+    height:500px;
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding:60px 0px;
+}
+
+.main3 span{
+    height:100px;
+    padding:50px 0px ;
+}
+
+.boxM{
+    width:90%;
+    height:90%;
+    /* background-color: rgb(234, 234, 233); */
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:20px;
+}
+
+.boxm1{
+    width:30%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.boxm1 img{
+    width:30px;
+    height:30px;
+    object-fit: cover;
+    padding:0px 20px 20px 
+}
+
+.boxm1 p{
+    padding:10px 10px 10px 10px;
+}
+
+#lrnmr{
+    border:none;
+    background-color: rgb(89, 89, 215) ;
+    width:140px;
+    height:40px;
+    margin-top: 20px;
+    color:white;
+    font-size: 14px;
+}
+
+.bchngm{
+    height:50px;
+    background-image: url("birds.webp");
+    background-repeat: no-repeat;
+    display:flex;
+    flex-direction: row-reverse;
+    background-position-x: right center;
+
+    
+}
+
+.chooseus,.dsc{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    height:auto;
+    
+}
+.dsc{
+    width:1024px;
+    height: 70%;
+    flex-wrap: wrap;
+    gap:10px;
+    padding:70px 0px 70px 0px;
+}
+
+
+.dsc .main11 #end{
+    height: 50px;
+    display: inline-block;
+}
+
+.dsc .quote .main11{
+    height: 60px;
+    width:100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:large;
+    /* font-weight: 15px; */
+}
+
+.dsc .quote .main12{
+    padding: 20px 0px 20px 0px;
+}
+
+.dsc .quote {
+    WIDTH:45%;
+    height: 100%;
+    padding: 10PX;
+}
+
+.dsc .details {
+    width:50%;
+    /* position:stati; */
+}
+
+
+
+.dsc .quote .main13 {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.main5{
+    width:100%;
+    height:25%;
+    background-image: var(--top);
+    padding:50px 0px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    flex-wrap: wrap;
+}
+
+.pilL{
+    width:200px;
+    height:200px;
+    display:flex;
+    flex-direction: column;
+    padding:0px 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pil_img{
+    width:150px ;
+    height: 100px;
+    border-radius: 50px;
+    display:flex;
+    justify-content: center;
+    background-image:var(--top);
+    align-items: center;
+}
+
+.pil_img img{
+    
+    width:60px;
+    height:40px;
+    object-fit:contain;
+    object-position: center center;
+    border-radius: 30px;
+
+}
+
+.pil_head{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    padding:20px 0px 0px 0px;
+    font-weight: 600;
+}
+
+.pil_text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* main6 styling starts here */
+
+.main6{
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:5% 30px;
+    
+    background-image: url("birds.webp");
+    background-repeat: no-repeat;
+    background-position-x: right right;
+    flex-wrap: wrap;
+}
+
+.hiw_hd{
+    display: flex;
+    justify-content: center;
+    padding:60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hiw{
+    width:auto;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    
+}
+
+.hiw .chip{
+    width:30%;
+    min-width: 340px;
+    height:auto;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hiw .odd-chip * , .hiw .odd-chip {
+    background-color: rgb(188, 255, 255) ;
+}
+
+.chip .chip_disc{
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.chip_disc p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:15px;
+    
+}
+.chip_head p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.chip_img{
+    display:flex;
+    align-items: center;
+    padding: 0px 0px 0px 20px;
+}
+
+.chip_img img{
+    width:70%;
+    height:100%;
+    object-fit: contain;
+    object-position: center center;
+}
+
+
+/* main7 styling starts here  */
+
+.main7{
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* padding:2% 0% 5% 0%; */
+    gap:60px;
+    
+    background-image: url("birds.webp");
+    background-repeat: no-repeat;
+    background-position-x: right right;
+    flex-wrap: wrap;
+    
+}
+
+.main7 .benifit {
+    width:1020px;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.bnft_hd{
+    display: flex;
+    justify-content: center;
+    padding:60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main7 .benifit .bnft{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    
+}
+
+.bnft .card{
+    width:240px;
+    min-width: 340px;
+    height:auto;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.card .card_disc{
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.card_disc p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:15px;
+    
+}
+.card_head p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.card_img{
+    display:flex;
+    align-items: center;
+    padding: 0px 0px 0px 20px;
+}
+
+.card_img img{
+    width:70%;
+    height:100%;
+    object-fit: contain;
+    object-position: center center;
+}
+
