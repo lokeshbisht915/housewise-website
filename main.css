@@ -114,9 +114,14 @@ main{
     object-position: center center;
 }
 
+.container{
+    max-width: 90vw;
+    margin-inline: auto;
+}
+
 
 .main2{
-    width:90vw;
+    width:100%;
     height:auto;
     display:flex;
     flex-direction: row;
